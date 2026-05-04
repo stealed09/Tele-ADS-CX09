@@ -923,7 +923,7 @@ async def gm_confirm_selection_handler(update: Update, context: ContextTypes.DEF
             f"✅ **{len(selected)} group(s) selected:**\n\n{names_preview}{more}\n\n"
             f"Now type your interval and message:\n\n"
             f"`<minutes> <message>`\n\n"
-            f"Example: `3 Daily update!`"
+            f"Example: `3 Daily update!`",
             parse_mode='Markdown',
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("« Cancel", callback_data="group_messages")
